@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Management</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Product Management</h1>
+    <form id="productForm">
+      <div class="form-group">
+        <label for="name">Product Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="unit">Unit:</label>
+        <input type="text" class="form-control" id="unit" name="unit" required>
+      </div>
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" class="form-control" id="price" step="0.01" name="price" required>
+      </div>
+      <div class="form-group">
+        <label for="expiry_date">Expiry Date:</label>
+        <input type="date" class="form-control" id="expiry_date" name="expiry_date" required>
+      </div>
+      <div class="form-group">
+        <label for="inventory">Inventory:</label>
+        <input type="number" class="form-control" id="inventory" name="inventory" required>
+      </div>
+      <div class="form-group">
+        <label for="image">Image:</label>
+        <input type="file" class="form-control" id="image" accept="image/*" name="image" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+    <br>
+    <h2>Product List</h2>
+    <table id="productList" class="table">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Unit</th>
+          <th>Price</th>
+          <th>Expiry Date</th>
+          <th>Inventory</th>
+          <th>Inventory Cost</th>
+          <th>Image</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
